@@ -100,6 +100,7 @@ body {
     color: white;
     margin: auto;
     padding: 10px;
+    cursor: pointer;
 }
 @keyframes scroll {
     from{transform: scaleY(0);}
