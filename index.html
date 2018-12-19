@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <script src="scripts/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
@@ -25,7 +27,7 @@
         <div class="content">
             <div class="text">
                 <h1>DATAVIZ FLUX MIGRATOIRES</h1>
-                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. 
+                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée.
                     Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
                     Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
                     Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
@@ -42,40 +44,31 @@
         </div>
     </div>
     <div class="dataviz">
-            <div class="container-toggle-content">
-                <a href='#sec1'><div class="button button-one " id=button-active></div></a>
-                <a href='#sec2'><div class="button button-two"></div></a>
-                <a href='#sec3'><div class="button button-three"></div></a>
-                <a href='#sec4'><div class="button button-four"></div></a>
-                <div class="button button-five"></div>
-                <div class="button button-six"></div>
-                <div class="button button-seven"></div>
-                <div class="button button-height"></div>
-                <div class="button button-nine"></div>
-            </div>
-        <!-- <div class="timeline">
-                <div class="container__timeline">
-                        <div class="timeline">
-                            <div class="progress-bar"></div>
-                            <div class="timeline__item one">
-                                <span class="date__one">XIXème - Aujourd'hui</span>
-                            </div>
-                            <div class="timeline__item two">
-                                <span class="date__two">1492 - XIXè siècle</span>
-                            </div>
-                            <div class="timeline__item three">
-                                <span class="date__three">VIII siècle avant JC - V siècle après</span>
-                            </div>
-                            <div class="timeline__item four">
-                                <span class="date__four">Pré-histoire</span>
-                            </div>
-                        </div>
-                    </div>
-        </div> -->
+        <div class="container-toggle-content">
+            <a href='#sec1'>
+                <div class="button button-one " id=button-active></div>
+            </a>
+            <a href='#sec2'>
+                <div class="button button-two"></div>
+            </a>
+            <a href='#sec3'>
+                <div class="button button-three"></div>
+            </a>
+            <a href='#sec4'>
+                <div class="button button-four"></div>
+            </a>
+            <div class="button button-five"></div>
+            <div class="button button-six"></div>
+            <div class="button button-seven"></div>
+            <div class="button button-height"></div>
+            <div class="button button-nine"></div>
+        </div>
         <div class="cardOne" data-text="Section 1" id="sec1">
             <div class="title">
                 <h1>Grandes guerres : conséquences sur la population et sa répartition.</h1>
-                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
+                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. Il y a 250
+                    millions d'années, le monde formait un seul et unique continent, appelé Pangée. Il y a 250 millions
+                    d'années, le monde formait un seul et unique continent, appelé Pangée.
                     Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.</p>
             </div>
             <div class="cardData">
@@ -85,14 +78,14 @@
                     </div>
                 </div>
                 <div id='layout2'>
-                        <div id='container2'>
-                            <svg id="svg"></svg>
-                        </div>
+                    <div id='container2'>
+                        <svg id="svg"></svg>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-        <!-- <div class="cardTwo">
+    <!-- <div class="cardTwo">
             <div class="title">
                 <h1>Grandes guerres : conséquences sur la population et sa répartition.</h1>
                 <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
@@ -113,426 +106,379 @@
         </div>
     </div> -->
     <div class="bigContainerPie" data-text="Section 2" id="sec2">
-                    <div class="container__timeline">
-                            <div class="timeline">
-                                <div class="progress-bar"></div>
-                                <div class="timeline__item one">
-                                    <span class="date__one">XIXème - Aujourd'hui</span>
-                                </div>
-                                <div class="timeline__item two">
-                                    <span class="date__two">1492 - XIXè siècle</span>
-                                </div>
-                                <div class="timeline__item three">
-                                    <span class="date__three">VIII siècle avant JC - V siècle après</span>
-                                </div>
-                                <div class="timeline__item four">
-                                    <span class="date__four">Pré-histoire</span>
-                                </div>
-                            </div>
-                        </div>
-            <div class="container-toggle-content">
-                    <a href='#sec1'><div class="button button-one "></div></a>
-                    <a href='#sec2'><div class="button button-two" id=button-active></div></a>
-                    <a href='#sec3'><div class="button button-three"></div></a>
-                    <a href='#sec4'><div class="button button-four"></div></a>
-                    <div class="button button-five"></div>
-                    <div class="button button-six"></div>
-                    <div class="button button-seven"></div>
-                    <div class="button button-height"></div>
-                    <div class="button button-nine"></div>
-            </div>
-        <div class="middleContainerPie active">
-            
-            <h1>Evolution du peuplement sur Terre sur les 100 dernières années.</h1>
-            <div class="container-pie">
-                    <h3>Pays les plus peuplés en 1918</h3>
-                    <div class="content-pie">
-                        <div class="content country-one">
-                            <div class="country-name">Chine</div>
-                            <div class="number-country">400 000 000</div>
-                            <div class="line-country-one"></div>
-                        </div>
-                        <div class="content country-two">
-                            <div class="country-name">Raj Britannique</div>
-                            <div class="number-country">330 567 600</div>
-                            <div class="line-country-two"></div>
-                        </div>
-                        <div class="content country-three">
-                            <div class="country-name">Empire Russe</div>
-                            <div class="number-country">119 546 234</div>
-                        </div>
-                    </div>
-            </div>
-            
-            <div class="container-pie second">
-                    <h3>Pays les plus peuplés en 2018</h3>
-                    <div class="content-pie">
-                        <div class="content country-one">
-                            <div class="country-name">Chine</div>
-                            <div class="number-country">1 381 943 050</div>
-                            <div class="line-country-one"></div>
-                        </div>
-                        <div class="content country-two">
-                            <div class="country-name">Inde</div>
-                            <div class="number-country">1 347 781 150</div>
-                            <div class="line-country-two"></div>
-                        </div>
-                        <div class="content country-three">
-                            <div class="country-name">Etats-Unis</div>
-                            <div class="number-country">327 163 096</div>
-                        </div>
-                    </div>
+        <div class="container__timeline">
+            <div class="timeline">
+                <div class="progress-bar"></div>
+                <div class="timeline__item one">
+                    <span class="date__one">XIXème - Aujourd'hui</span>
                 </div>
+                <div class="timeline__item two">
+                    <span class="date__two">1492 - XIXè siècle</span>
+                </div>
+                <div class="timeline__item three">
+                    <span class="date__three">VIII siècle avant JC - V siècle après</span>
+                </div>
+                <div class="timeline__item four">
+                    <span class="date__four">Pré-histoire</span>
+                </div>
+            </div>
         </div>
-
-            <!-- <div class="middleContainerPie three not-active">
-                    <h1>Evolution du peuplement sur Terre sur les 100 dernières années.</h1>
-                    <div class="container-pie five">
-                            <h3>Pays les plus peuplés en 1918</h3>
-                            <div class="content-pie">
-                                <div class="content country-one">
-                                    <div class="country-name">Inde</div>
-                                    <div class="number-country">1.1 milliard</div>
-                                    <div class="line-country-one"></div>
-                                </div>
-                                <div class="content country-two">
-                                    <div class="country-name">Chine</div>
-                                    <div class="number-country">1.0 milliard</div>
-                                    <div class="line-country-two"></div>
-                                </div>
-                                <div class="content country-three">
-                                    <div class="country-name">USA</div>
-                                    <div class="number-country">296 millions</div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="container-pie six">
-                            <h3>Pays les plus peuplés en 2018</h3>
-                            <div class="content-pie">
-                                <div class="content country-one">
-                                    <div class="country-name">France</div>
-                                    <div class="number-country">1.1 milliard</div>
-                                    <div class="line-country-one"></div>
-                                </div>
-                                <div class="content country-two">
-                                    <div class="country-name">Italie</div>
-                                    <div class="number-country">1.0 milliard</div>
-                                    <div class="line-country-two"></div>
-                                </div>
-                                <div class="content country-three">
-                                    <div class="country-name">Amérique</div>
-                                    <div class="number-country">296 millions</div>
-                                </div>
-                            </div>
-                        </div>
-                </div> -->
-                
-    </div>
-    <div class="container-map" data-text="Section 3" id="sec3">
         <div class="container-toggle-content">
-            <a href='#sec1'><div class="button button-one "></div></a>
-            <a href='#sec2'><div class="button button-two"></div></a>
-            <a href='#sec3'><div class="button button-three" id=button-active></div></a>
-            <a href='#sec4'><div class="button button-four"></div></a>
+            <a href='#sec1'>
+                <div class="button button-one "></div>
+            </a>
+            <a href='#sec2'>
+                <div class="button button-two" id=button-active></div>
+            </a>
+            <a href='#sec3'>
+                <div class="button button-three"></div>
+            </a>
+            <a href='#sec4'>
+                <div class="button button-four"></div>
+            </a>
             <div class="button button-five"></div>
             <div class="button button-six"></div>
             <div class="button button-seven"></div>
             <div class="button button-height"></div>
             <div class="button button-nine"></div>
+        </div>
+        <div class="middleContainerPie active">
+
+            <h1>Evolution du peuplement sur Terre sur les 100 dernières années.</h1>
+            <div class="container-pie">
+                <h3>Pays les plus peuplés en 1918</h3>
+                <div class="content-pie">
+                    <div class="content country-one">
+                        <div class="country-name">Chine</div>
+                        <div class="number-country">400 000 000</div>
+                        <div class="line-country-one"></div>
+                    </div>
+                    <div class="content country-two">
+                        <div class="country-name">Raj Britannique</div>
+                        <div class="number-country">330 567 600</div>
+                        <div class="line-country-two"></div>
+                    </div>
+                    <div class="content country-three">
+                        <div class="country-name">Empire Russe</div>
+                        <div class="number-country">119 546 234</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-pie second">
+                <h3>Pays les plus peuplés en 2018</h3>
+                <div class="content-pie">
+                    <div class="content country-one">
+                        <div class="country-name">Chine</div>
+                        <div class="number-country">1 381 943 050</div>
+                        <div class="line-country-one"></div>
+                    </div>
+                    <div class="content country-two">
+                        <div class="country-name">Inde</div>
+                        <div class="number-country">1 347 781 150</div>
+                        <div class="line-country-two"></div>
+                    </div>
+                    <div class="content country-three">
+                        <div class="country-name">Etats-Unis</div>
+                        <div class="number-country">327 163 096</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="container-map" data-text="Section 3" id="sec3">
+        <div class="container-toggle-content">
+            <a href='#sec1'>
+                <div class="button button-one "></div>
+            </a>
+            <a href='#sec2'>
+                <div class="button button-two"></div>
+            </a>
+            <a href='#sec3'>
+                <div class="button button-three" id=button-active></div>
+            </a>
+            <a href='#sec4'>
+                <div class="button button-four"></div>
+            </a>
+            <div class="button button-five"></div>
+            <div class="button button-six"></div>
+            <div class="button button-seven"></div>
+            <div class="button button-height"></div>
+            <div class="button button-nine"></div>
+        </div>
         <h1>Grandes découvertes historiques</h1>
         <div id="basic_choropleth" style="position: relative; width: 1000px; height: 800px;"></div>
     </div>
     <div class="container-cardAfrica" data-text="Section 4" id="sec4">
-            <div class="container-toggle-content">
-                    <a href='#sec1'><div class="button button-one "></div></a>
-                    <a href='#sec2'><div class="button button-two"></div></a>
-                    <a href='#sec3'><div class="button button-three"></div></a>
-                    <a href='#sec4'><div class="button button-four" id=button-active></div></a>
-                    <div class="button button-five"></div>
-                    <div class="button button-six"></div>
-                    <div class="button button-seven"></div>
-                    <div class="button button-height"></div>
-                    <div class="button button-nine"></div>
+        <div class="container-toggle-content">
+            <a href='#sec1'>
+                <div class="button button-one "></div>
+            </a>
+            <a href='#sec2'>
+                <div class="button button-two"></div>
+            </a>
+            <a href='#sec3'>
+                <div class="button button-three"></div>
+            </a>
+            <a href='#sec4'>
+                <div class="button button-four" id=button-active></div>
+            </a>
+            <div class="button button-five"></div>
+            <div class="button button-six"></div>
+            <div class="button button-seven"></div>
+            <div class="button button-height"></div>
+            <div class="button button-nine"></div>
+        </div>
+        <div class="cardAfrica">
+            <div class="title">
+                <h1>Titre random</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, porro dolores aliquam laboriosam
+                    beatae perferendis sed libero nam quisquam voluptatibus, numquam corporis repellendus quas et
+                    totam, molestiae est mollitia repellat?</p>
             </div>
-            <div class="cardAfrica">
-                    <div class="title">
-                        <h1>Titre random</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, porro dolores aliquam laboriosam beatae perferendis sed libero nam quisquam voluptatibus, numquam corporis repellendus quas et totam, molestiae est mollitia repellat?</p>
+            <div class="cardDataAfrica">
+                <div class="valueWorld">
+                    <div class="cardValueWorld">
+                        <h1>19%</h1>
+                        <h2>Population mondiale</h2>
+                        <h3>86 millions d'Africains au XVIe siècle.</h3>
                     </div>
-                    <div class="cardDataAfrica">
-                        <div class="valueWorld">
-                            <div class="cardValueWorld">
-                                <h1>19%</h1>
-                                <h2>Population mondiale</h2>
-                                <h3>86 millions d'Africains au XVIe siècle.</h3>
-                            </div>
-                            <div class="cardValueWorld">
-                                    <h1>10%</h1>
-                                    <h2>Population mondiale</h2>
-                                    <h3>101 millions d'Africains au XIXe siècle.</h3>
-                            </div>
-                        </div>
-                        <div class="valueSlaves">
-                                <h1>2%</h1>
-                                <h2>Esclaves</h2>
-                                <h3>2 millions d'Africains ont été soumis à l'esclavage entre le XVIè siècle et le XIXè siècle.</h3>
-                        </div>
-                        <div class="valueColons">
-                            <h1>Pays ayant colonisé l'Afrique entre 1500 et 1800</h1>
-                            <h2>Grande-Bretagne</h2>
-                            <h2>Portugal</h2>
-                            <h2>France</h2>
-                            <h2>Hollande</h2>
-                            <h2>Espagne</h2>
-                            <h2>Danemark</h2>
-                        </div>
+                    <div class="cardValueWorld">
+                        <h1>10%</h1>
+                        <h2>Population mondiale</h2>
+                        <h3>101 millions d'Africains au XIXe siècle.</h3>
                     </div>
                 </div>
+                <div class="valueSlaves">
+                    <h1>2%</h1>
+                    <h2>Esclaves</h2>
+                    <h3>2 millions d'Africains ont été soumis à l'esclavage entre le XVIè siècle et le XIXè siècle.</h3>
+                </div>
+                <div class="valueColons">
+                    <h1>Pays ayant colonisé l'Afrique entre 1500 et 1800</h1>
+                    <h2>Grande-Bretagne</h2>
+                    <h2>Portugal</h2>
+                    <h2>France</h2>
+                    <h2>Hollande</h2>
+                    <h2>Espagne</h2>
+                    <h2>Danemark</h2>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
     <script>
-            // Define the data as a two-dimensional array of numbers. If you had other
-            // data to associate with each number, replace each number with an object, e.g.,
-            // `{key: "value"}`.
-            var data_1918 = [
-                [400000000, 330567600, 119546234] // [key: "Inde", key: "Chine", key: "USA"]
-            ];
-    
-            // Define the margin, radius, and color scale. The color scale will be
-            // assigned by index, but if you define your data using objects, you could pass
-            // in a named field from the data object instead, such as `d.name`. Colors
-            // are assigned lazily, so if you want deterministic behavior, define a domain
-            // for the color scale.
-            var m = 15,
-                r = 140,
-                z = d3.scale.category20c();
-    
-            // Insert an svg element (with margin) for each row in our dataset. A child g
-            // element translates the origin to the pie center.
-            var graphicPie = d3.select("body .container-pie").selectAll("svg")
-                .data(data_1918)
-                .enter().append("svg")
-                .attr("width", (r + m) * 2)
-                .attr("height", (r + m) * 2)
-                .classed('pie-path', true)
-                .append("g")
-                .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
-    
-    
-            // The data for each svg element is a row of numbers (an array). We pass that to
-            // d3.layout.pie to compute the angles for each arc. These start and end angles
-            // are passed to d3.svg.arc to draw arcs! Note that the arc radius is specified
-            // on the arc, not the layout.
-            graphicPie.selectAll("path")
-                .data(d3.layout.pie())
-                .enter().append("path")
-                .attr("d", d3.svg.arc()
-                    .innerRadius(r / 2)
-                    .outerRadius(r))
-                .style("fill", function (d, i) { return z(i); });
-    
+        var data_1918 = [
+            [400000000, 330567600, 119546234]
+        ];
 
-    
-            var data_2018 = [
-                [1381943050, 1347781150, 327163096] // [key: "Inde", key: "Chine", key: "USA"]
-            ];
-    
-            // Define the margin, radius, and color scale. The color scale will be
-            // assigned by index, but if you define your data using objects, you could pass
-            // in a named field from the data object instead, such as `d.name`. Colors
-            // are assigned lazily, so if you want deterministic behavior, define a domain
-            // for the color scale.
-            var m = 15,
-                r = 140,
-                z = d3.scale.category20c();
-    
-            // Insert an svg element (with margin) for each row in our dataset. A child g
-            // element translates the origin to the pie center.
-            var graphicPie = d3.select("body .second").selectAll("svg")
-                .data(data_2018)
-                .enter().append("svg")
-                .attr("width", (r + m) * 2)
-                .attr("height", (r + m) * 2)
-                .classed('pie-path', true)
-                .append("g")
-                .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
-    
-    
+        var m = 15,
+            r = 140,
+            z = d3.scale.category20c();
+        var graphicPie = d3.select("body .container-pie").selectAll("svg")
+            .data(data_1918)
+            .enter().append("svg")
+            .attr("width", (r + m) * 2)
+            .attr("height", (r + m) * 2)
+            .classed('pie-path', true)
+            .append("g")
+            .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
 
-            // on the arc, not the layout.
-            graphicPie.selectAll("path")
-                .data(d3.layout.pie())
-                .enter().append("path")
-                .attr("d", d3.svg.arc()
-                    .innerRadius(r / 2)
-                    .outerRadius(r))
-                .style("fill", function (d, i) { return z(i); });
+        graphicPie.selectAll("path")
+            .data(d3.layout.pie())
+            .enter().append("path")
+            .attr("d", d3.svg.arc()
+                .innerRadius(r / 2)
+                .outerRadius(r))
+            .style("fill", function (d, i) { return z(i); });
+
+        var data_2018 = [
+            [1381943050, 1347781150, 327163096]
+        ];
+        var m = 15,
+            r = 140,
+            z = d3.scale.category20c();
+        var graphicPie = d3.select("body .second").selectAll("svg")
+            .data(data_2018)
+            .enter().append("svg")
+            .attr("width", (r + m) * 2)
+            .attr("height", (r + m) * 2)
+            .classed('pie-path', true)
+            .append("g")
+            .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
 
 
-                var basic_choropleth = new Datamap({
-        element: document.getElementById("basic_choropleth"),
-        projection: 'mercator',
+        graphicPie.selectAll("path")
+            .data(d3.layout.pie())
+            .enter().append("path")
+            .attr("d", d3.svg.arc()
+                .innerRadius(r / 2)
+                .outerRadius(r))
+            .style("fill", function (d, i) { return z(i); });
 
-        geographyConfig: {
-            popupOnHover: true,
-            highlightOnHover: true,
-            highlightFillColor: '#63c2de',
-            highlightBorderColor: 'none',
-            borderWidth: 0.3,
-        },
 
-        //config des flux (arc) > popup ok
-        arcConfig: {
-            popupOnHover: true,
-        },
-        //Config des bubbles, couleurs
-        bubblesConfig: {
-            highlightFillColor: '#fa2563',
-        },  
+        var basic_choropleth = new Datamap({
+            element: document.getElementById("basic_choropleth"),
+            projection: 'mercator',
 
-        fills: {
-            defaultFill: "#6699cc",
-            authorHasTraveledTo: "#fa0fa0"
-        },
+            geographyConfig: {
+                popupOnHover: true,
+                highlightOnHover: true,
+                highlightFillColor: '#63c2de',
+                highlightBorderColor: 'none',
+                borderWidth: 0.3,
+            },
 
-        data: {
-            'RUS': {fillKey: 'RUS'},
-            'PRK': {fillKey: 'PRK'},
-            'PRC': {fillKey: 'PRC'},
-            'IND': {fillKey: 'IND'},
-            'GBR': {fillKey: 'GBR'},
-            'FRA': {fillKey: 'FRA'},
-            'PAK': {fillKey: 'PAK'},
-            'USA': {fillKey: 'USA'},
-            'ESP': {fillKey: 'ESP'}
-        }
+            //config des flux (arc) > popup ok
+            arcConfig: {
+                popupOnHover: true,
+            },
+            //Config des bubbles, couleurs
+            bubblesConfig: {
+                highlightFillColor: '#fa2563',
+            },
+
+            fills: {
+                defaultFill: "#6699cc",
+                authorHasTraveledTo: "#fa0fa0"
+            },
+
+            data: {
+                'RUS': { fillKey: 'RUS' },
+                'PRK': { fillKey: 'PRK' },
+                'PRC': { fillKey: 'PRC' },
+                'IND': { fillKey: 'IND' },
+                'GBR': { fillKey: 'GBR' },
+                'FRA': { fillKey: 'FRA' },
+                'PAK': { fillKey: 'PAK' },
+                'USA': { fillKey: 'USA' },
+                'ESP': { fillKey: 'ESP' }
+            }
         });
 
         var sites = [{
-        name: 'Lucy, ou Dinqnesh',
-        radius: 5,
-        discover: 'Lucy constitue le premier fossile relativement complet (conservé à 40 %, avec 52 fragments osseux1) qui ait été découvert pour une période aussi ancienne, et a révolutionné notre perception des origines humaines, en démontrant que l’acquisition de la bipédie datait d\'au moins 3 millions d’années.',
-        country: 'Ethiopie',
-        fillKey: 'RUS',
-        date: '1974',
-        latitude: 11.7866551,
-        longitude: 41.00703469999996
-      },{
-        name: 'Os de la plus ancienne main humaine',
-        radius: 6,
-        discover: 'La phalange datée d\'1.8 million d\'années retrouvée dans les gorges d\'Olduvai est de la même taille que celle d\'un Homo Sapiens.',
-        country: 'Tanzanie',
-        fillKey: 'RUS',
-        date: '?',
-        latitude: -2.9895714,
-        longitude: 35.35391279999999
+            name: 'Lucy, ou Dinqnesh',
+            radius: 5,
+            discover: 'Lucy constitue le premier fossile relativement complet (conservé à 40 %, avec 52 fragments osseux1) qui ait été découvert pour une période aussi ancienne, et a révolutionné notre perception des origines humaines, en démontrant que l’acquisition de la bipédie datait d\'au moins 3 millions d’années.',
+            country: 'Ethiopie',
+            fillKey: 'RUS',
+            date: '1974',
+            latitude: 11.7866551,
+            longitude: 41.00703469999996
+        }, {
+            name: 'Os de la plus ancienne main humaine',
+            radius: 6,
+            discover: 'La phalange datée d\'1.8 million d\'années retrouvée dans les gorges d\'Olduvai est de la même taille que celle d\'un Homo Sapiens.',
+            country: 'Tanzanie',
+            fillKey: 'RUS',
+            date: '?',
+            latitude: -2.9895714,
+            longitude: 35.35391279999999
 
-      },{
-        name: 'Ossements de bisons et pointes de flèches en silex',
-        radius: 8,
-        discover: 'un cow-boy découvre des ossements de bisons fossilisés depuis 10 000 ans. Au milieu des restes sont fichées des pointes de flèches en silex. Celles-ci attestent donc d\'une présence humaine à cette époque.',
-        country: 'USA',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: 36.8450241,
-        longitude: -103.91774459999999
-      },{
-        name: 'Luzia',
-        radius: 5,
-        discover: 'Le squelette de Luzia a été découvert sur le site de Lapa Vermelha au Brésil en 1995. Il était enfoui sous 12 mètres de terre. Les restes fossiles de cette femme de 20 à 25 ans sont assez complets ce qui a permis de déduire qu\'elle mesurait un peu plus d\'un mètre cinquante. ',
-        country: 'Brésil',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: -19.6097189,
-        longitude: -44.00374629999999
-      },{
-        name: 'Homme de Kennewick',
-        radius: 6,
-        discover: 'Découvert le 28 juillet 1996 au nord-ouest des Etats-Unis, près de la rivière Columbia. Les datations effectuées sur le squelette indiquent un âge compris entre 9200 et 9600 ans, ce qui en fait l\'un des plus anciens américains fossilisés. ',
-        country: 'USA',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: 45.61263109999999,
-        longitude: -122.70759250000003
-      },{
-        name: 'Grotte de Lascaux',
-        radius: 3,
-        discover: 'Découverte fortuite de Lascaux, par quatre adolescents Marcel Ravidat, Jacques Marsal, Georges Agnel et Simon Coencas. Henri Breuil est le premier préhistorien à visiter Lascaux, le 21 septembre 1940.',
-        country: 'France',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: 45.053919,
-        longitude: 1.167650999999978
-      },{
-        name: 'Grotte d\'Altamira',
-        radius: 3,
-        discover: 'Les premières peintures paléolithiques sont découvertes en 1879 à Altamira, lors de fouilles conduites par Marcelino Sanz de Sautuola. Ce chercheur avait observé la présence de dessins géométriques sur les parois sans y accorder d\'importance mais c\'est sa fillette Maria, alors âgée de huit ans, qui remarqua la première la présence de « bœufs » dessinés au plafond. ',
-        country: 'Espagne',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: 43.377452,
-        longitude: -4.122346999999991
-    },{
-        name: 'Grotte Chauvet',
-        radius: 3,
-        discover: 'découverte de la grotte Chauvet et de ses peintures pariétales dénotant une grande maîtrise technique dès l\'Aurignacien, il y a plus de 30 000 ans.',
-        country: 'France',
-        fillKey: 'RUS',
-        date: '1994',
-        latitude: 44.38724390000001,
-        longitude: 4.4158645999999635
-    },{
-        name: 'Vallée de Foz Côa',
-        radius: 2,
-        discover: 'Découverte de gravures datant de plus de 20 000 ans.',
-        country: 'Portugal',
-        fillKey: 'RUS',
-        date: '1926',
-        latitude: 41.0799911,
-        longitude: -7.111781699999938
-    }
+        }, {
+            name: 'Ossements de bisons et pointes de flèches en silex',
+            radius: 8,
+            discover: 'un cow-boy découvre des ossements de bisons fossilisés depuis 10 000 ans. Au milieu des restes sont fichées des pointes de flèches en silex. Celles-ci attestent donc d\'une présence humaine à cette époque.',
+            country: 'USA',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: 36.8450241,
+            longitude: -103.91774459999999
+        }, {
+            name: 'Luzia',
+            radius: 5,
+            discover: 'Le squelette de Luzia a été découvert sur le site de Lapa Vermelha au Brésil en 1995. Il était enfoui sous 12 mètres de terre. Les restes fossiles de cette femme de 20 à 25 ans sont assez complets ce qui a permis de déduire qu\'elle mesurait un peu plus d\'un mètre cinquante. ',
+            country: 'Brésil',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: -19.6097189,
+            longitude: -44.00374629999999
+        }, {
+            name: 'Homme de Kennewick',
+            radius: 6,
+            discover: 'Découvert le 28 juillet 1996 au nord-ouest des Etats-Unis, près de la rivière Columbia. Les datations effectuées sur le squelette indiquent un âge compris entre 9200 et 9600 ans, ce qui en fait l\'un des plus anciens américains fossilisés. ',
+            country: 'USA',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: 45.61263109999999,
+            longitude: -122.70759250000003
+        }, {
+            name: 'Grotte de Lascaux',
+            radius: 3,
+            discover: 'Découverte fortuite de Lascaux, par quatre adolescents Marcel Ravidat, Jacques Marsal, Georges Agnel et Simon Coencas. Henri Breuil est le premier préhistorien à visiter Lascaux, le 21 septembre 1940.',
+            country: 'France',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: 45.053919,
+            longitude: 1.167650999999978
+        }, {
+            name: 'Grotte d\'Altamira',
+            radius: 3,
+            discover: 'Les premières peintures paléolithiques sont découvertes en 1879 à Altamira, lors de fouilles conduites par Marcelino Sanz de Sautuola. Ce chercheur avait observé la présence de dessins géométriques sur les parois sans y accorder d\'importance mais c\'est sa fillette Maria, alors âgée de huit ans, qui remarqua la première la présence de « bœufs » dessinés au plafond. ',
+            country: 'Espagne',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: 43.377452,
+            longitude: -4.122346999999991
+        }, {
+            name: 'Grotte Chauvet',
+            radius: 3,
+            discover: 'découverte de la grotte Chauvet et de ses peintures pariétales dénotant une grande maîtrise technique dès l\'Aurignacien, il y a plus de 30 000 ans.',
+            country: 'France',
+            fillKey: 'RUS',
+            date: '1994',
+            latitude: 44.38724390000001,
+            longitude: 4.4158645999999635
+        }, {
+            name: 'Vallée de Foz Côa',
+            radius: 2,
+            discover: 'Découverte de gravures datant de plus de 20 000 ans.',
+            country: 'Portugal',
+            fillKey: 'RUS',
+            date: '1926',
+            latitude: 41.0799911,
+            longitude: -7.111781699999938
+        }
 
-    ];
+        ];
 
-    // basic_choropleth.arc([
-    // {
-    //     origin: 'RUS',
-    //     destination: 'ESP',
-    // },
-    // {
-    //     origin: 'USA',
-    //     destination: 'FRA',
-    // },
-    // {
-    //     origin: 'IND',
-    //     destination: 'PAK',
-    // }])
+        // basic_choropleth.arc([
+        // {
+        //     origin: 'RUS',
+        //     destination: 'ESP',
+        // },
+        // {
+        //     origin: 'USA',
+        //     destination: 'FRA',
+        // },
+        // {
+        //     origin: 'IND',
+        //     destination: 'PAK',
+        // }])
 
-    var colors = d3.scale.category20(); // category 20 c'est juste une palette de couleur, tu choisis tes couleurs dedans
+        var colors = d3.scale.category20(); // category 20 c'est juste une palette de couleur, tu choisis tes couleurs dedans
 
         basic_choropleth.updateChoropleth({
-            
+
         });
-        
 
+        //création des bubbles pour les sites donnés
+        basic_choropleth.bubbles(sites, {
+            //création du template des popup
+            popupTemplate: function (geo, data) {
+                return ['<div class="hoverinfo">' + data.name,
+                '<br/>Découverte: ' + data.discover + '',
+                '<br/>Pays: ' + data.country + '',
+                '<br/>Date: ' + data.date + '',
+                    '</div>'].join('');
+            },
 
-    //création des bubbles pour les sites donnés
-    basic_choropleth.bubbles(sites, {
-        //création du template des popup
-        popupTemplate: function (geo, data) {
-                return ['<div class="hoverinfo">' +  data.name,
-                '<br/>Découverte: ' +  data.discover + '',
-                '<br/>Pays: ' +  data.country + '',
-                '<br/>Date: ' +  data.date + '',
-                '</div>'].join('');
-        },
-
-    })
-        </script>
+        })
+    </script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>
