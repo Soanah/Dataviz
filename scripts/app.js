@@ -1,68 +1,10 @@
-const progressBar = document.querySelector('.progress-bar');
-const dotItemOne = document.querySelector('.one');
-const dotItemTwo = document.querySelector('.two');
-const dotItemThree = document.querySelector('.three');
-const dotItemFour = document.querySelector('.four');
-
-const containerPieOne = document.querySelector('.middleContainerPie');
-const containerPieTwo = document.querySelector('.middleContainerPie.two');
-// const containerPieThree = document.querySelector('.middleContainerPie.three');
-const cardOne = document.querySelector('.cardOne')
-
-const toggleButtonOne = document.querySelector('.button-one')
-const toggleButtonTwo = document.querySelector('.button-two')
-const toggleButtonThree = document.querySelector('.button-three')
-
-toggleButtonOne.addEventListener('click', () =>
+let scrollDown = document.querySelector(".scroll-text")
+scrollDown.addEventListener("click", () =>
 {
-  cardOne.classList.replace('active', 'not-active')
-  containerPieOne.classList.replace('not-active', 'active')
-  // containerPieThree.classList.replace('active', 'not-active')
-  toggleButtonOne.setAttribute('id', 'button-active')
-  toggleButtonTwo.removeAttribute('id', 'button-active')
-  toggleButtonThree.removeAttribute('id', 'button-active')
-
-})
-
-toggleButtonTwo.addEventListener('click', () =>
-{
-  containerPieOne.classList.replace('active', 'not-active')
-  cardOne.classList.replace('not-active', 'active')
-  // containerPieThree.classList.replace('active', 'not-active')
-  toggleButtonOne.removeAttribute('id', 'button-active')
-  // toggleButtonThree.removeAttribute('id', 'button-active')
-  toggleButtonTwo.setAttribute('id', 'button-active')
-
-
-})
-toggleButtonThree.addEventListener('click', () =>
-{
-  containerPieOne.classList.replace('active', 'not-active')
-  cardOne.classList.replace('active', 'not-active')
-  // containerPieThree.classList.replace('not-active', 'active')
-  toggleButtonOne.removeAttribute('id', 'button-active')
-  cardOne.removeAttribute('id', 'button-active')
-  toggleButtonTwo.setAttribute('id', 'button-active')
-
-  toggleButtonThree.setAttribute('id', 'button-active')
-})
-
-
-dotItemOne.addEventListener('click', () =>
-{
-    progressBar.style.height = '83%';
-})
-dotItemTwo.addEventListener('click', () =>
-{
-    progressBar.style.height = '61%';
-})
-dotItemThree.addEventListener('click', () =>
-{
-    progressBar.style.height = '38%';
-})
-dotItemFour.addEventListener('click', () =>
-{
-    progressBar.style.height = '13%';
+    window.window.scrollBy({ 
+        top: 1000, 
+        behavior: 'smooth' 
+      })
 })
 
 /** 
