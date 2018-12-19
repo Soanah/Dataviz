@@ -214,6 +214,7 @@ body {
 }
 .cardData #layout, #layout2 {
     padding: 40px;
+    color: white;
 }
 /*dataviz*/
 .cardOne .title {
@@ -241,23 +242,32 @@ body {
     text-align: center;
   }
   
-.cardData #container {
+.cardData .container {
+    position: relative;
     width: 400px;
     height:400px;
     margin: auto;
     background-color: #2C3647;
-}
-
-#layout svg {
-    width: 100%;
-    height: 100%; 
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
     box-shadow: 3px 11px 39px 0px #1c1c27; 
 }
+div.container span {
+    position: absolute;
+    top:5%;
+    width:100%;
+}
+#layout svg {
+    width: 100%;
+    height: 100%; 
+}
 
-.bar {
+.bar-1{
     fill: #00DEC7;
+}
+
+.bar-2{
+    fill: #008BE8;
 }
 
 text {
@@ -319,74 +329,83 @@ div#layout2 {
     text-align: center;
 }
 
-div#container2 {
+div.container2 {
+    position: relative;
     width: 400px;
     height:400px;
     margin: auto;
     background-color: #2C3647;
-}
-.cardData #layout2 #container2 svg {
-    width: 100%;
-    height: 100%;
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
-    box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27; 
 }
-
-#container2 .bar {
+div.container2 span {
+    position: absolute;
+    top:5%;
+    width:100%;
+}
+.cardData #layout2 .container2 svg {
+    width: 100%;
+    height: 100%;
+}
+.titleSpan{
+    font-size: 8px;
+    color: white;
+}
+.container2 .bar {
     fill: #008BE8;
 }
     
-#container2 text {
+.container2 text {
     font-size: 8px;
     color: #008BE8; 
 }
     
-#container2 path {
+.container2 path {
     stroke: #69E7D7;
     opacity: 0.2;
 }
     
-#container2  line {
+.container2  line {
     stroke: #008BE8;
     opacity: 0.4;
     stroke-dasharray: 3 6;
 }
     
-#container2 line#limit {
+.container2 line#limit {
     stroke: #008BE8;
     stroke-width: 1;
     stroke-dasharray: 3 6;
     opacity: 0.8;
 }
     
-#container2 .grid path {
+.container2 .grid path {
     stroke-width: 0;
 }
     
-#container2  .grid .tick line {
+.container2  .grid .tick line {
     stroke: #008BE8;
     stroke-opacity: 0.3;
 }
     
-#container2 text.divergence {
+.container2 text.divergence {
     font-size: 10px;
     fill: #2C3647;
 }
     
-#container2  text.value {
+.container2  text.value {
     font-size: 8px;
     fill: #008BE8;
 }
     
-#container2 text.title {
+.container2 text.title {
     font-size: 12px;
     font-weight: 600;
     fill: #BAC0C0;
     opacity: 0.8;
 }
     
-#container2 text.label {
+.container2 text.label {
     font-size: 8px;
     font-weight: 400;
     fill: #008BE8;
@@ -603,7 +622,7 @@ div#container2 {
     height: 100%;
     width: 7rem;
     top: 0%;
-    transform: translateY(%);
+    transform: translateY(50%);
 }
 
 .bigContainerPie .container__timeline .timeline

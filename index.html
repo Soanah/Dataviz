@@ -80,15 +80,17 @@
             </div>
             <div class="cardData">
                 <div id='layout'>
-                    <div id='container'>
-                        <svg></svg>
+                    <div class='container'>
+                        <span>Répartition avant la découverte de l'Amérique</span>
+                        <svg class="svg1"></svg>
                     </div>
                 </div>
                 <div id='layout2'>
-                        <div id='container2'>
-                            <svg id="svg"></svg>
-                        </div>
+                    <div class='container2'>
+                            <span>Répartition après la découverte de l'Amérique</span>
+                        <svg class="svg2"></svg>
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -334,8 +336,6 @@
                     .outerRadius(r))
                 .style("fill", function (d, i) { return z(i); });
     
-
-    
             var data_2018 = [
                 [1, 1, 1] // [key: "Inde", key: "Chine", key: "USA"]
             ];
@@ -360,7 +360,6 @@
                 .append("g")
                 .attr("transform", "translate(" + (r + m) + "," + (r + m) + ")");
     
-    
             // The data for each svg element is a row of numbers (an array). We pass that to
             // d3.layout.pie to compute the angles for each arc. These start and end angles
             // are passed to d3.svg.arc to draw arcs! Note that the arc radius is specified
@@ -373,11 +372,6 @@
                     .outerRadius(r))
                 .style("fill", function (d, i) { return z(i); });
     
-
-
-
-
-
                 var data_2018_three = [
                 [1, 1, 1] // [key: "Inde", key: "Chine", key: "USA"]
             ];
@@ -415,10 +409,6 @@
                     .outerRadius(r))
                 .style("fill", function (d, i) { return z(i); });
     
-
-
-
-
                 var data_2018_four = [
                 [1, 2, 3] // [key: "Inde", key: "Chine", key: "USA"]
             ];
@@ -677,8 +667,6 @@
         basic_choropleth.updateChoropleth({
             
         });
-        
-
 
     //création des bubbles pour les sites donnés
     basic_choropleth.bubbles(sites, {
