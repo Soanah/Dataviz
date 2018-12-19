@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
     font-family: 'Avenir LT Std';
@@ -237,395 +241,381 @@ body {
     text-align: center;
   }
   
-  .cardData #container {
+.cardData #container {
     width: 400px;
     height:400px;
     margin: auto;
     background-color: #2C3647;
-  }
-  
-  #layout svg {
+}
+
+#layout svg {
     width: 100%;
     height: 100%; 
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
     box-shadow: 3px 11px 39px 0px #1c1c27; 
-  }
-  
-  .bar {
+}
+
+.bar {
     fill: #00DEC7;
-  }
-  
-  text {
+}
+
+text {
     font-size: 8px;
     color: #69E7D7; 
-  }
-  
-  #layout path {
+}
 
+#layout path {
     stroke: #69E7D7; 
     opacity: 0.2; 
-  }
-  
-  line {
+}
+
+line {
     stroke: #69E7D7;
     opacity: 0.4;
     stroke-dasharray: 3 6;
-  }
-  
-  line#limit {
+}
+
+line#limit {
     stroke: #69E7D7;
     stroke-width: 1;
     stroke-dasharray: 3 6;
     opacity: 0.8;
-  }
-  
-  .grid path {
+}
+
+.grid path {
     stroke-width: 0;
-  }
-  
-  .grid .tick line {
+}
+
+.grid .tick line {
     stroke: #69E7D7;
     stroke-opacity: 0.3;
-  }
-  
-  text.divergence {
+}
+
+text.divergence {
     font-size: 10px;
     fill: #2C3647;
-  }
-  
-  text.value {
+}
+
+text.value {
     font-size: 8px;
     fill: #00DEC7;
-  }
-  
-  text.title {
+}
+
+text.title {
     font-size: 12px;
     font-weight: 600;
     fill: #BAC0C0;
     opacity: 0.8;
+}
+
+text.label {
+font-size: 8px;
+font-weight: 400;
+fill: #00DEC7;
+}
+/*deuxième tableau*/
+div#layout2 {
+    text-align: center;
+}
+
+div#container2 {
+    width: 400px;
+    height:400px;
+    margin: auto;
+    background-color: #2C3647;
+}
+.cardData #layout2 #container2 svg {
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
+    -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27;
+}
+
+#container2 .bar {
+    fill: #008BE8;
+}
     
-  }
-  
-  text.label {
+#container2 text {
+    font-size: 8px;
+    color: #008BE8; 
+}
+    
+#container2 path {
+    stroke: #69E7D7;
+    opacity: 0.2;
+}
+    
+#container2  line {
+    stroke: #008BE8;
+    opacity: 0.4;
+    stroke-dasharray: 3 6;
+}
+    
+#container2 line#limit {
+    stroke: #008BE8;
+    stroke-width: 1;
+    stroke-dasharray: 3 6;
+    opacity: 0.8;
+}
+    
+#container2 .grid path {
+    stroke-width: 0;
+}
+    
+#container2  .grid .tick line {
+    stroke: #008BE8;
+    stroke-opacity: 0.3;
+}
+    
+#container2 text.divergence {
+    font-size: 10px;
+    fill: #2C3647;
+}
+    
+#container2  text.value {
+    font-size: 8px;
+    fill: #008BE8;
+}
+    
+#container2 text.title {
+    font-size: 12px;
+    font-weight: 600;
+    fill: #BAC0C0;
+    opacity: 0.8;
+}
+    
+#container2 text.label {
     font-size: 8px;
     font-weight: 400;
-    fill: #00DEC7;
-  }
-/*deuxième tableau*/
-    div#layout2 {
-        text-align: center;
-    }
-  
-    div#container2 {
-        width: 400px;
-        height:400px;
-        margin: auto;
-        background-color: #2C3647;
-    }
-    .cardData #layout2 #container2 svg {
-        width: 100%;
-        height: 100%;
-        -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
-        -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
-        box-shadow: 3px 11px 39px 0px #1c1c27;
-    }
-  
-    #container2 .bar {
-        fill: #008BE8;
-      }
-      
-      #container2 text {
-        font-size: 8px;
-        color: #008BE8; 
-      }
-      
-      #container2 path {
-        stroke: #69E7D7;
-        opacity: 0.2;
-        
-      }
-      
-      #container2  line {
-        stroke: #008BE8;
-        opacity: 0.4;
-        stroke-dasharray: 3 6;
-      }
-      
-      #container2 line#limit {
-        stroke: #008BE8;
-        stroke-width: 1;
-        stroke-dasharray: 3 6;
-        opacity: 0.8;
-      }
-      
-      #container2 .grid path {
-        stroke-width: 0;
-      }
-      
-      #container2  .grid .tick line {
-        stroke: #008BE8;
-        stroke-opacity: 0.3;
-      }
-      
-      #container2 text.divergence {
-        font-size: 10px;
-        fill: #2C3647;
-      }
-      
-      #container2  text.value {
-        font-size: 8px;
-        fill: #008BE8;
-      }
-      
-     #container2 text.title {
-        font-size: 12px;
-        font-weight: 600;
-        fill: #BAC0C0;
-        opacity: 0.8;
-        
-      }
-      
-     #container2 text.label {
-        font-size: 8px;
-        font-weight: 400;
-        fill: #008BE8;
-      }
+    fill: #008BE8;
+}
 
-      .bigContainerButton
-      {
-        position: absolute;
+.bigContainerButton{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
+}
+    
+.bigContainerPie{
+        position: relative;
         width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
-      }
-      
-      .bigContainerPie
-      {
-          position: relative;
-          width: 100%;
-          height: 100vh;
-      }
+}
 
-      
-      .container-toggle-content
-      {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          right: 0;
-          width: 6rem;
-          height: 100%;
-      }
+.container-toggle-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        width: 6rem;
+        height: 100%;
+}
 
-      .container-toggle-content :nth-child(2n)
-      {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
+.container-toggle-content :nth-child(2n){
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-      
-      .container-toggle-content .button
-      {
-          width: 17px;
-          height: 17px;
-          border-radius: 50%;
-          background-color: #99cccc;
-          cursor: pointer;
-          opacity: 0.4;
-      }
+    
+.container-toggle-content .button{
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: #99cccc;
+        cursor: pointer;
+        opacity: 0.4;
+}
 
-      
-      .container-toggle-content .button:hover
-      {
-          transition: 0.3s linear;
-          opacity: 1;
-          transform: scale(1.2);
-      }
-
-      .bigContainerPie .middleContainerPie
-      {
-          position: absolute;
-          top: 10%;
-          left: 55%;
-          transform: translateX(-50%);
-          width: 70%;
-          height: 85%;
-      }
-
-      .bigContainerPie .middleContainerPie h1
-      {
-        font-family: 'Open Sans';
-        color: white;
-        font-size: 1.5rem;
-        opacity: 0.8;
-      }
-      
-      .container-pie
-      {
-          position: relative;
-          margin-top: 3rem;
-          display: flex;
-          justify-content: center;
-          width: 28rem;
-          height: 42rem;
-          background-color: #2A2D3A;    
-          /* box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75); */
-          box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      }
-
-      .container-map
-      {
-          position: relative;
-          width: 100%;
-          height: 100vh;
-      }
-
-      .middleContainerPie .second
-      {
-          position: absolute;
-          left: 50%;
-          top: 4%;
-      }
-
-      .middleContainerPie .three
-      {
-            position: absolute;
-            left: 50%;
-            top: 4%;
-      }
-
-      .middleContainerPie .five
-      {
-            position: absolute;
-            left: 50%;
-            top: 4%;
-      }
-      
-      .container-pie h3
-      {
-          font-family: 'Open Sans', sans-serif;
-          color: white;
-          font-size: 1.2rem;
-          margin-top: 1rem;
-          margin-bottom: 2.5rem;
-          opacity: 0.8;
-      }
-      
-      .container-pie .pie-path 
-      {
-          position: absolute;
-          top: 38%;
-          transform: translateY(-50%);
-          filter: drop-shadow(0 0 0.50rem #74b9ff);
-      }
-      
-      .container-pie .content-pie
-      {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          position: absolute;
-          top: 97%;
-          transform: translateY(-100%);
-          width: 24rem;
-          height: 13rem;
-      }
-      
-      .container-pie .content-pie .content
-      {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 100%;
-          height: 4.33em;
-          font-family: 'Open Sans', sans-serif;
-          color: white;
-          font-size: 1rem;
-      }
-      
-      .container-pie .content-pie .content .line-country-one
-      {
-          position: absolute;
-          width: 79%;
-          height: 1px;
-          background-color: #00DEC7;
-          opacity: 0.2;
-          left: 11%;
-          top: 40%;
-      }
-      
-      .container-pie .content-pie .content .line-country-two
-      {
-          position: absolute;
-          width: 79%;
-          height: 1px;
-          background-color: #00DEC7;
-          opacity: 0.2;
-          left: 11%;
-          top: 75%;
-      }
-
-      .container-pie .content .country-name
-      {
-          margin-left: 3.5rem
-      }
-      
-      .container-pie .content .country-name::before
-      {
-          position: absolute;
-          content: '';
-          width: 25px;
-          height: 20px;
-          background-color: #3399cc;
-          box-shadow: 0px 0px 30px 1px #3399cc;
-          padding-right: 1rem;
-          left: 0.4rem;
-      }
-      
-      .container-pie .country-two .country-name::before{ background-color: #6699cc; box-shadow: 0px 0px 30px 1px #6699cc;}
-      .container-pie .country-three .country-name::before{ background-color: #99cccc; box-shadow: 0px 0px 30px 1px #99cccc;}
-      
-
-      .not-active
-      {
-          display: none;
-      }
-
-      .active
-      {
-          display: block;
-      }
-
-      #button-active
-      {
+    
+.container-toggle-content .button:hover{
+        transition: 0.3s linear;
         opacity: 1;
         transform: scale(1.2);
-      }
+}
 
-      /* TIMELINE OFF PIE GRAPHIC*/
-
-      .bigContainerPie .container__timeline
-    {
+.bigContainerPie .middleContainerPie{
         position: absolute;
-        height: 100%;
-        width: 7rem;
-        top: 0%;
-        transform: translateY(%);
-    }
+        top: 10%;
+        left: 55%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 85%;
+}
 
-    .bigContainerPie .container__timeline .timeline
-    {
-        display: none;
-        position: relative;
-        left: 100%;
-        width: 2px;
-        height: 100%;
-        background-color: white;
-        z-index: 150;
-    } 
+.bigContainerPie .middleContainerPie h1{
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+    
+.container-pie{
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 28rem;
+    height: 42rem;
+    background-color: #2A2D3A;    
+    /* box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75); */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.container-map
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.middleContainerPie .second
+{
+    position: absolute;
+    left: 50%;
+    top: 4%;
+}
+
+.middleContainerPie .three
+{
+    position: absolute;
+    left: 50%;
+    top: 4%;
+}
+
+.middleContainerPie .five
+{
+    position: absolute;
+    left: 50%;
+    top: 4%;
+}
+
+.container-pie h3
+{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+}
+
+.container-pie .pie-path 
+{
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 0 0.50rem #74b9ff);
+}
+
+.container-pie .content-pie
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 97%;
+    transform: translateY(-100%);
+    width: 24rem;
+    height: 13rem;
+}
+
+.container-pie .content-pie .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.33em;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.container-pie .content-pie .content .line-country-one
+{
+    position: absolute;
+    width: 79%;
+    height: 1px;
+    background-color: #00DEC7;
+    opacity: 0.2;
+    left: 11%;
+    top: 40%;
+}
+
+.container-pie .content-pie .content .line-country-two
+{
+    position: absolute;
+    width: 79%;
+    height: 1px;
+    background-color: #00DEC7;
+    opacity: 0.2;
+    left: 11%;
+    top: 75%;
+}
+
+.container-pie .content .country-name
+{
+    margin-left: 3.5rem
+}
+
+.container-pie .content .country-name::before
+{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 20px;
+    background-color: #3399cc;
+    box-shadow: 0px 0px 30px 1px #3399cc;
+    padding-right: 1rem;
+    left: 0.4rem;
+}
+    
+.container-pie .country-two .country-name::before{ background-color: #6699cc; box-shadow: 0px 0px 30px 1px #6699cc;}
+.container-pie .country-three .country-name::before{ background-color: #99cccc; box-shadow: 0px 0px 30px 1px #99cccc;}
+    
+
+.not-active
+{
+    display: none;
+}
+
+.active
+{
+    display: block;
+}
+
+#button-active
+{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* TIMELINE OFF PIE GRAPHIC*/
+
+.bigContainerPie .container__timeline
+{
+    position: absolute;
+    height: 100%;
+    width: 7rem;
+    top: 0%;
+    transform: translateY(%);
+}
+
+.bigContainerPie .container__timeline .timeline
+{
+    display: none;
+    position: relative;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    z-index: 150;
+} 
 
 .container__timeline .progress-bar
 {
@@ -728,4 +718,106 @@ body {
     color: white;
     font-size: 1.7rem;
     opacity: 0.8;
+}
+
+.container-cardAfrica
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.cardAfrica {
+    position: relative;
+    left: 20%;
+    top: 7%;
+    width: 960px;
+}
+.cardAfrica .title {
+    width: 70%;
+    margin: 10px;
+}
+.cardAfrica .title h1 {
+    font-size: 22px;
+    color: rgb(240, 239, 239);
+}
+.cardAfrica .title p {
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+}
+.cardAfrica .cardDataAfrica .valueWorld {
+    display: flex;
+}
+.cardAfrica .cardDataAfrica .valueWorld .cardValueWorld {
+    background: #2C3647;
+    display: flex;
+    -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
+    -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27;
+    width: 500px;
+    height: 90px;
+    margin: 10px;
+}
+.cardAfrica .cardDataAfrica .valueWorld .cardValueWorld h1{
+    color: #008BE8;
+    margin: auto 25px;
+}
+.cardAfrica .cardDataAfrica .valueWorld .cardValueWorld h2{
+    color: rgb(115, 118, 119);
+    font-size: 12px;
+    width: 100px;
+    margin: auto;
+}
+.cardAfrica .cardDataAfrica .valueWorld .cardValueWorld h3{
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+    width: 250px;
+    margin: auto 20px;
+}
+.cardAfrica .cardDataAfrica .valueSlaves {
+    background: #2C3647;
+    display: flex;
+    -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
+    -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27;
+    width: 1020px;
+    margin: 10px;
+    height: 100px;
+}
+.cardAfrica .cardDataAfrica .valueSlaves  h1{
+    color: #00DEC7;
+    padding: 10px 20px 10px 40px;
+}
+.cardAfrica .cardDataAfrica .valueSlaves  h2{
+    color: rgb(115, 118, 119);
+    font-size: 16px;
+    width: 100px;
+    padding: 25px;
+    margin: auto 0;
+}
+.cardAfrica .cardDataAfrica .valueSlaves  h3{
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+    width: 500px;
+    padding-left: 200px;
+    margin: auto;
+}
+.cardAfrica .cardDataAfrica .valueColons {
+    background: #2C3647;
+    -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
+    -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27;
+    width: 1020px;
+    height: 300px;
+    margin: 20px 10px;
+}
+.cardAfrica .cardDataAfrica .valueColons h1{
+    color: rgb(109, 109, 109);
+    font-size: 16px;
+    padding: 20px 15px 10px 15px;
+}
+.cardAfrica .cardDataAfrica .valueColons h2{
+    color: rgb(155, 155, 155);
+    font-size: 14px;
+    padding: 5px 15px;
 }
