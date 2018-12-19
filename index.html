@@ -73,13 +73,15 @@
             </div>
             <div class="cardData">
                 <div id='layout'>
-                    <div id='container'>
-                        <svg></svg>
+                    <div class='container'>
+                        <span>Répartition avant la découverte de l'Amérique</span>
+                        <svg class="svg1"></svg>
                     </div>
                 </div>
                 <div id='layout2'>
-                    <div id='container2'>
-                        <svg id="svg"></svg>
+                    <div class='container2'>
+                            <span>Répartition après la découverte de l'Amérique</span>
+                        <svg class="svg2"></svg>
                     </div>
                 </div>
             </div>
@@ -578,9 +580,8 @@
 
         var colors = d3.scale.category20(); // category 20 c'est juste une palette de couleur, tu choisis tes couleurs dedans
 
-        basic_choropleth.updateChoropleth({
-
-        });
+        //basic_choropleth.updateChoropleth({
+        //});
 
         //création des bubbles pour les sites donnés
         basic_choropleth.bubbles(sites, {

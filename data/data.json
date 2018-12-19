@@ -1,17 +1,17 @@
 {
     "id1":
     [
-    {"continent" : "Asie", "value": 243},
-    {"continent": "Europe", "value": 129},
-    {"continent": "Amérique", "value": 96},
-    {"continent": "Afrique", "value": 40}
+    {"container": ".svg", "continent" : "Asie", "value": 53, "color" : "bar-1"},
+    {"container": ".svg", "continent": "Europe sans Russie", "value": 18.17, "color" : "bar-1"},
+    {"container": ".svg", "continent": "Amérique", "value": 9.83, "color" : "bar-1"},
+    {"container": ".svg", "continent": "Afrique", "value": 19, "color" : "bar-1"}
     ],
 
     "id2":
     [
-    {"continent" : "Asie", "value": 230},
-    {"continent": "Europe", "value": 50.3},
-    {"continent": "Amérique", "value": 11.8},
-    {"continent": "Afrique", "value": 16.5}
+    {"container": ".svg2", "continent" : "Asie", "value": 56, "color" : "bar-2"},
+    {"container": ".svg2", "continent": "Europe", "value": 26.40, "color" : "bar-2"},
+    {"container": ".svg2", "continent": "Amérique", "value": 10.6 , "color" : "bar-2"},
+    {"container": ".svg2", "continent": "Afrique", "value": 7, "color" : "bar-2"}
     ]
 }
