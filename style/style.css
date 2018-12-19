@@ -822,3 +822,167 @@ div#container2 {
     font-size: 14px;
     padding: 5px 15px;
 }
+
+.container-timeline-roma
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-timeline-roma .middle-container-roma
+{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.container-timeline-roma .middle-container-roma h1
+{
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+
+.middle-container-roma .horizontal-line
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.horizontal-line .greydot
+{
+    position: relative;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.horizontal-line .vertical
+{
+    position: absolute;
+    top: -250px;
+    width: 1px;
+    height: 500px;
+    background-color: grey;
+    opacity: 0.3;
+}
+
+.horizontal-line .line
+{
+    right: 5px;
+} 
+
+.greydot .date
+{
+    position: relative;
+    top: -32px;
+    left: -12px;
+    color: grey;
+    font-family: 'Open Sans';
+}
+.special .date
+{
+    position: relative;
+    top: -32px;
+    left: 0px;
+    font-family: 'Open Sans';
+}
+
+.horizontal-line .bluedot
+{
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #008BE8;
+    border-radius: 50%; 
+}
+
+.bluedot .blueline
+{
+    position: relative;
+    width: 1px;
+    top: -100px;
+    height: 105px;
+    background-color: #008BE8;
+}
+
+.blueline .content 
+{
+    position: relative;
+    left: -90px;
+    top: -25px;
+}
+
+
+#republic
+{
+    background-color:#3C83AD;
+    color: #3C83AD; 
+}
+
+#empire
+{
+    background-color: #00DEC7;
+    color: #00DEC7;
+}
+
+
+.first{left: 2%;}
+.first .blueline{top: -100px; height: 105px; left: 4px;} 
+.first .content {color: #008BE8;}
+
+.two{left: 16%;}
+.two .blueline{top: 0px; height: 105px; left: 4px;} 
+.two .content {color: #008BE8; top: 105px; left: -120px;}
+
+.three{left: 25%;}
+.three .blueline{top: -100px; height: 105px; left: 4px;} 
+.three .content {left: -120px; top: -25px;}
+
+.four{left: 39%;}
+.four .blueline{top: 0px; height: 105px; left: 4px;} 
+.four .content {top: 110px; left: -120px;}
+
+.five{left: 42%;}
+.five .blueline{top: -150px; height: 150px; left: 4px;} 
+.five .content {left: -120px; top: -25px;}
+
+.six{left: 51%;}
+.six .blueline{top: -100px; height: 105px; left: 4px;} 
+.six .content {left: -120px; top: -25px;}
+
+.seven{left: 52.5%;}
+.seven .blueline{top: 0px; height: 150px; left: 4px;} 
+.seven .content {top: 150px; left: -120px;}
+
+.eight{left: 54.5%;}
+.eight .blueline{top: -240px; height: 240px; left: 4px;} 
+.eight .content {left: -120px; top: -25px;}
+
+.nine{left: 61.5%;}
+.nine .blueline{top: 0px; height: 105px; left: 4px;} 
+.nine .content {top: 105px; left: -150px;}
+
+.ten{left: 74.5%;}
+.ten .blueline{top: -120px; height: 120px; left: 4px;} 
+.ten .content {left: -180px; top: -25px;}
+
+.eleven{left: 79%;}
+.eleven .blueline{top: -80px; height: 80px; left: 4px;} 
+.eleven .content {left: -50px; top: -25px;}
+
+.twelve{left: 87%;}
+.twelve .blueline{top: 0px; height: 105px; left: 4px;} 
+.twelve .content {top: 110px; left: -50px;}
