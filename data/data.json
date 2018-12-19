@@ -1,0 +1,17 @@
+{
+    "id1":
+    [
+    {"continent" : "Asie", "value": 243},
+    {"continent": "Europe", "value": 129},
+    {"continent": "Amérique", "value": 96},
+    {"continent": "Afrique", "value": 40}
+    ],
+
+    "id2":
+    [
+    {"continent" : "Asie", "value": 230},
+    {"continent": "Europe", "value": 50.3},
+    {"continent": "Amérique", "value": 11.8},
+    {"continent": "Afrique", "value": 16.5}
+    ]
+}
