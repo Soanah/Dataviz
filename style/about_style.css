@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
+    font-family: 'Avenir LT Std';
+    height: 100vh;
+}
+.about {
+    width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.about .menu {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+.about .menu ul {
+    list-style: none;
+    display: flex;
+    margin-top: auto;
+}
+.about .menu ul li.items{
+    width: 150px;
+    text-align: end;
+}
+.about .menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(213, 235, 232);
+}
+.about .menu ul li a::before{
+    content:'';
+    position: absolute;
+    margin-top: 25px;
+    width: 25px;
+    border: 0.3px solid #69E7D7;
+}
+.about .content-about p{
+    margin-top : 3rem;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+.about .content-about {
+    width: 660px;
+    color: rgb(172, 172, 172);
+    margin: auto;
+}
+.about .content-about h1 {
+    color: rgb(243, 243, 243);
+}
+.about .sources {
+    color: rgb(100, 100, 105);
+    margin : 0 auto;
+}
