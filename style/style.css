@@ -4,7 +4,11 @@ html {
 
 body {
     background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
-    font-family: 'Avenir LT Std';
+}
+
+p{
+    line-height : 1.3rem;
+    font-size : 1.4rem;
 }
 .container {
     width: 1080px;
@@ -730,8 +734,7 @@ div.container2 span {
 .container-map h1
 {
     position: relative;
-    top: 10%;
-    left: 20%;
+    left: 12%;
     font-family: 'Open Sans';
     color: white;
     font-size: 1.7rem;
@@ -762,6 +765,7 @@ div.container2 span {
 .cardAfrica .title p {
     font-size: 16px;
     color: rgb(155, 155, 155);
+    margin-top: 3%;
 }
 .cardAfrica .cardDataAfrica .valueWorld {
     display: flex;
