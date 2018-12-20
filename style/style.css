@@ -61,12 +61,14 @@ p{
     font-size: 14px;
     margin: 10% 5% 5% 0;
     color: rgb(195, 210, 212);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 .content .text a {
     font-size: 14px;
     margin: 10% 5% 5% 0;
     text-decoration: none;
     color: rgb(193, 216, 219);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content .text a::before{
     content:'';
@@ -233,9 +235,10 @@ p{
     color: rgb(224, 224, 224);
 }
 .cardOne .title p {
-    font-size: 14px;
+    font-size: 12px;
     color: rgb(177, 177, 177);
     padding: 0 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .dataviz {
     width: 100%;
@@ -481,11 +484,12 @@ div.container2 span {
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    width: 28rem;
-    height: 38rem;
-    background-color: #2A2D3A;    
-    /* box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75); */
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    width: 25rem;
+    height: 35rem;
+    background-color: #2C3647;    
+    -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
+    -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
+    box-shadow: 3px 11px 39px 0px #1c1c27;
 }
 
 .container-map
@@ -518,7 +522,7 @@ div.container2 span {
 
 .container-pie h3
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
     color: white;
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -597,8 +601,8 @@ div.container2 span {
     left: 0.4rem;
 }
     
-.container-pie .country-two .country-name::before{ background-color: #6699cc; box-shadow: 0px 0px 30px 1px #6699cc;}
-.container-pie .country-three .country-name::before{ background-color: #99cccc; box-shadow: 0px 0px 30px 1px #99cccc;}
+.container-pie .country-two .country-name::before{ background-color: #6699cc; box-shadow: 0px 0px 5px 1px #6699cc;}
+.container-pie .country-three .country-name::before{ background-color: #99cccc; box-shadow: 0px 0px 5px 1px #99cccc;}
     
 
 .not-active
@@ -750,7 +754,7 @@ div.container2 span {
 
 .cardAfrica {
     position: relative;
-    left: 10%;
+    margin: auto;
     top: 7%;
     width: 960px;
 }
@@ -763,9 +767,10 @@ div.container2 span {
     color: rgb(240, 239, 239);
 }
 .cardAfrica .title p {
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(155, 155, 155);
     margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .cardAfrica .cardDataAfrica .valueWorld {
     display: flex;
@@ -776,7 +781,7 @@ div.container2 span {
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
     box-shadow: 3px 11px 39px 0px #1c1c27;
-    width: 500px;
+    width: 400px;
     height: 90px;
     margin: 10px;
 }
@@ -792,9 +797,10 @@ div.container2 span {
 }
 .cardAfrica .cardDataAfrica .valueWorld .cardValueWorld h3{
     color: rgb(197, 197, 197);
-    font-size: 12px;
+    font-size: 9px;
     width: 250px;
     margin: auto 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .cardAfrica .cardDataAfrica .valueSlaves {
     background: #2C3647;
@@ -802,13 +808,13 @@ div.container2 span {
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
     box-shadow: 3px 11px 39px 0px #1c1c27;
-    width: 1020px;
+    width: 820px;
     margin: 10px;
     height: 100px;
 }
 .cardAfrica .cardDataAfrica .valueSlaves  h1{
     color: #00DEC7;
-    padding: 10px 20px 10px 40px;
+    margin: auto 20px;
 }
 .cardAfrica .cardDataAfrica .valueSlaves  h2{
     color: rgb(115, 118, 119);
@@ -819,18 +825,19 @@ div.container2 span {
 }
 .cardAfrica .cardDataAfrica .valueSlaves  h3{
     color: rgb(197, 197, 197);
-    font-size: 12px;
+    font-size: 9px;
     width: 500px;
     padding-left: 200px;
     margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .cardAfrica .cardDataAfrica .valueColons {
     background: #2C3647;
     -webkit-box-shadow: 3px 11px 39px 0px #1c1c27;
     -moz-box-shadow: 3px 11px 39px 0px #1c1c27;
     box-shadow: 3px 11px 39px 0px #1c1c27;
-    width: 1020px;
-    height: 300px;
+    width: 820px;
+    height: 220px;
     margin: 20px 10px;
 }
 .cardAfrica .cardDataAfrica .valueColons h1{
@@ -840,8 +847,9 @@ div.container2 span {
 }
 .cardAfrica .cardDataAfrica .valueColons h2{
     color: rgb(155, 155, 155);
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-timeline-roma

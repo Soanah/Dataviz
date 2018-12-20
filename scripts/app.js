@@ -7,9 +7,7 @@ scrollDown.addEventListener("click", () =>
       })
 })
 
-/** 
- * Discover America
-*/
+/* Discover America */
 
 function importData(id){
   d3.json("data/data.json").then(function(data)
@@ -31,21 +29,17 @@ function importData(id){
     const chart = svg.append('g')
       .attr('transform', `translate(${margin}, ${margin})`);
 
-  //création de l'axe x : de 0 à la taille définie avant + on récupère le nom voulu
+  //create x : 0 to size defined before
   const xScale = d3.scaleBand()
     .range([0, width])
     .domain(data[id].map((s) => s.continent))
     .padding(0.6)
-  //création de l'axe y : de la hauteur définie à 0 > domain = les valeurs qu'on affiche
+  //create y : height defined to  0 > domain = values displayed
   const yScale = d3.scaleLinear()
     .range([height, 0])
     .domain([0, 100]);
 
-  //   grille verticale
-  //   const makeXLines = () => d3.axisBottom()
-  //     .scale(xScale)
-
-  //création lignes Y
+  //create line Y
   const makeYLines = () => d3.axisLeft()
     .scale(yScale)
 
@@ -55,15 +49,6 @@ function importData(id){
 
   chart.append('g')
     .call(d3.axisLeft(yScale));
-
-  //   grille verticale
-  //   chart.append('g')
-  //     .attr('class', 'grid')
-  //     .attr('transform', `translate(0, ${height})`)
-  //     .call(makeXLines()
-  //       .tickSize(-height, 0, 0)
-  //       .tickFormat('')
-  //     )
 
   chart.append('g')
     .attr('class', 'grid')
@@ -109,13 +94,6 @@ function importData(id){
     .attr('transform', 'rotate(-90)')
     .attr('text-anchor', 'middle')
     .text('Pourcentage du total mondial')
-
-  /*svg.append('text')
-    .attr('class', 'title')
-    .attr('x', width / 2 + margin)
-    .attr('y', 40)
-    .attr('text-anchor', 'middle')
-    .text('Répartition avant la découverte de l\'Amérique')*/
   })
 }
 
