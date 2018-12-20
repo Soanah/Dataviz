@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dataviz</title>
+    <title>Steps</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -14,23 +14,20 @@
     <script src="scripts/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
     <script src="scripts/datamaps.world.min.js"></script>
+    <!-- WELCOME -->
     <div class="container">
         <div class="menu">
             <ul>
-                <li><a href='#'>Name.</a></li>
+                <li><a href='#'>Steps</a></li>
             </ul>
             <ul>
-                <li class="items"><a href='#'>About.</a></li>
-                <li class="items"><a href='#'>Explore.</a></li>
+                <li class="items"><a href='#'>A propos</a></li>
             </ul>
         </div>
         <div class="content">
             <div class="text">
-                <h1>DATAVIZ FLUX MIGRATOIRES</h1>
-                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée.
-                    Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
-                    Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
-                    Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
+                <h1>BIENVENUE DANS STEPS</h1>
+                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. Celle-ci à commencer à se fracturer de manière vraiment intense il y a 200 millions d’années, et aujourd’hui, s’est divisé en cinq continents différents et habitables : l’Afrique, l’Amérique, l’Asie, l’Europe et l’Océanie. L’Homo sapiens n'apparaît il y a seulement 200 000 ans. Celui-ci marque le début des migrations de l’humanité. Sa soif de connaissance et d’exploration, sa curiosité et son esprit aventurier le mènent ainsi à la découverte d’autres continents, et tout cela s’est transmis au fil des années, les raisons variant en fonction des époques.
                 </p>
                 <a href="#">EXPLORER</a>
             </div>
@@ -43,6 +40,150 @@
             <div class="scroll-text">SCROLL</div>
         </div>
     </div>
+        <!-- Map -->
+        <div class="container-map" data-text="Section 3" id="sec3">
+            <div class="container-toggle-content">
+                <a href='#sec1'>
+                    <div class="button button-one "></div>
+                </a>
+                <a href='#sec2'>
+                    <div class="button button-two"></div>
+                </a>
+                <a href='#sec3'>
+                    <div class="button button-three" id=button-active></div>
+                </a>
+                <a href='#sec4'>
+                    <div class="button button-four"></div>
+                </a>
+                <a href='#sec5'><div class="button button-five"></div></a>
+                <div class="button button-six"></div>
+                <div class="button button-seven"></div>
+                <div class="button button-height"></div>
+                <div class="button button-nine"></div>
+            </div>
+            <h1>Grandes découvertes historiques</h1>
+            <div id="basic_choropleth" style="position: relative; width: 1000px; height: 800px;"></div>
+        </div>
+        <!-- Timeline -->
+        <div class="container-timeline-roma" data-text="Section 5" id="sec5">
+            <div class="container-toggle-content">
+                <a href='#sec1'>
+                    <div class="button button-one "></div>
+                </a>
+                <a href='#sec2'>
+                    <div class="button button-two"></div>
+                </a>
+                <a href='#sec3'>
+                    <div class="button button-three"></div>
+                </a>
+                <a href='#sec4'>
+                    <div class="button button-four"></div>
+                </a>
+                <div class="button button-five" id=button-active></div>
+                <div class="button button-six"></div>
+                <div class="button button-seven"></div>
+                <div class="button button-height"></div>
+                <div class="button button-nine"></div>
+            </div>
+            <div class="middle-container-roma">
+                <h1>L'Empire Romain : De la naissance à la chutte du plus grand Empire de l'Antiquité</h1>
+                <div class="horizontal-line">
+                    <div class="bluedot first">
+                        <div class="blueline">
+                            <span class="content">-753 : Naissance de Rome</span>
+                        </div>
+                    </div>
+                    <div class="bluedot two">
+                        <div class="blueline">
+                            <span class="content">-613 : Domination des rois étrusques</span>
+                        </div>
+                    </div>
+                    <div class="bluedot three" id='republic'>
+                        <div class="blueline" id='republic'>
+                            <span class="content">-509 : Début de la République Romaine</span>
+                        </div>
+                    </div>
+                    <div class="bluedot four" id='republic'>
+                        <div class="blueline" id='republic'>
+                            <span class="content">-264 / -241 : Première guerre punique </span>
+                        </div>
+                    </div>
+                    <div class="bluedot five" id='republic'>
+                        <div class="blueline" id='republic'>
+                            <span class="content">-218 / -201 : 2ème guerre punique</span>
+                        </div>
+                    </div>
+                    <div class="bluedot six" id='republic'>
+                        <div class="blueline" id='republic'>
+                            <span class="content">-149 / -146 : 3ème Guerre punique</span>
+                        </div>
+                    </div>
+                    <div class="bluedot seven" id='republic'>
+                        <div class="blueline" id='republic'>
+                            <span class="content">-44 Jules César est nommé consul</span>
+                        </div>
+                    </div>
+                    <div class="bluedot eight" id='empire'>
+                        <div class="blueline" id='empire'>
+                            <span class="content">-27 : Naissance de l'Empire Romain</span>
+                        </div>
+                    </div>
+                    <div class="bluedot nine" id='empire'>
+                        <div class="blueline" id='empire'>
+                            <span class="content">117 : L'Empire Romain atteint son extension maximale</span>
+                        </div>
+                    </div>
+                    <div class="bluedot ten" id='empire'>
+                        <div class="blueline" id='empire'>
+                            <span class="content">330 : Constantinople est déclarée capitale de l'Empire</span>
+                        </div>
+                    </div>
+                    <div class="bluedot eleven" id='empire'>
+                        <div class="blueline" id='empire'>
+                            <span class="content">395 : L'Empire est partagée entre Occident et Orient</span>
+                        </div>
+                    </div>
+                    <div class="bluedot twelve" id='empire'>
+                        <div class="blueline" id='empire'>
+                            <span class="content">476 : Fin de l'Empire Romain d'Occident</span>
+                        </div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">-800</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">-600</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">-400</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">-200</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot special">
+                        <span class="date">1</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">200</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">400</span>
+                        <div class="vertical line"></div>
+                    </div>
+                    <div class="greydot">
+                        <span class="date">600</span>
+                        <div class="vertical line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Graph Discover America-->
     <div class="dataviz">
         <div class="container-toggle-content">
             <a href='#sec1'>
@@ -87,130 +228,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="cardTwo">
-            <div class="title">
-                <h1>Grandes guerres : conséquences sur la population et sa répartition.</h1>
-                <p>Il y a 250 millions d'années, le monde formait un seul et unique continent appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée. Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.
-                    Il y a 250 millions d'années, le monde formait un seul et unique continent, appelé Pangée.</p>
-            </div>
-            <div class="cardData">
-                <div id='layout'>
-                    <div id='container'>
-                        <svg></svg>
-                    </div>
-                </div>
-                <div id='layout2'>
-                        <div id='container2'>
-                            <svg id="svg"></svg>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="bigContainerPie" data-text="Section 2" id="sec2">
-        <div class="container__timeline">
-            <div class="timeline">
-                <div class="progress-bar"></div>
-                <div class="timeline__item one">
-                    <span class="date__one">XIXème - Aujourd'hui</span>
-                </div>
-                <div class="timeline__item two">
-                    <span class="date__two">1492 - XIXè siècle</span>
-                </div>
-                <div class="timeline__item three">
-                    <span class="date__three">VIII siècle avant JC - V siècle après</span>
-                </div>
-                <div class="timeline__item four">
-                    <span class="date__four">Pré-histoire</span>
-                </div>
-            </div>
-        </div>
-        <div class="container-toggle-content">
-            <a href='#sec1'>
-                <div class="button button-one "></div>
-            </a>
-            <a href='#sec2'>
-                <div class="button button-two" id=button-active></div>
-            </a>
-            <a href='#sec3'>
-                <div class="button button-three"></div>
-            </a>
-            <a href='#sec4'>
-                <div class="button button-four"></div>
-            </a>
-            <a href='#sec5'><div class="button button-five"></div></a>
-            <div class="button button-six"></div>
-            <div class="button button-seven"></div>
-            <div class="button button-height"></div>
-            <div class="button button-nine"></div>
-        </div>
-        <div class="middleContainerPie active">
-
-            <h1>Evolution du peuplement sur Terre sur les 100 dernières années.</h1>
-            <div class="container-pie">
-                <h3>Pays les plus peuplés en 1918</h3>
-                <div class="content-pie">
-                    <div class="content country-one">
-                        <div class="country-name">Chine</div>
-                        <div class="number-country">400 000 000</div>
-                        <div class="line-country-one"></div>
-                    </div>
-                    <div class="content country-two">
-                        <div class="country-name">Raj Britannique</div>
-                        <div class="number-country">330 567 600</div>
-                        <div class="line-country-two"></div>
-                    </div>
-                    <div class="content country-three">
-                        <div class="country-name">Empire Russe</div>
-                        <div class="number-country">119 546 234</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-pie second">
-                <h3>Pays les plus peuplés en 2018</h3>
-                <div class="content-pie">
-                    <div class="content country-one">
-                        <div class="country-name">Chine</div>
-                        <div class="number-country">1 381 943 050</div>
-                        <div class="line-country-one"></div>
-                    </div>
-                    <div class="content country-two">
-                        <div class="country-name">Inde</div>
-                        <div class="number-country">1 347 781 150</div>
-                        <div class="line-country-two"></div>
-                    </div>
-                    <div class="content country-three">
-                        <div class="country-name">Etats-Unis</div>
-                        <div class="number-country">327 163 096</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-map" data-text="Section 3" id="sec3">
-        <div class="container-toggle-content">
-            <a href='#sec1'>
-                <div class="button button-one "></div>
-            </a>
-            <a href='#sec2'>
-                <div class="button button-two"></div>
-            </a>
-            <a href='#sec3'>
-                <div class="button button-three" id=button-active></div>
-            </a>
-            <a href='#sec4'>
-                <div class="button button-four"></div>
-            </a>
-            <a href='#sec5'><div class="button button-five"></div></a>
-            <div class="button button-six"></div>
-            <div class="button button-seven"></div>
-            <div class="button button-height"></div>
-            <div class="button button-nine"></div>
-        </div>
-        <h1>Grandes découvertes historiques</h1>
-        <div id="basic_choropleth" style="position: relative; width: 1000px; height: 800px;"></div>
-    </div>
+    <!-- Africa representation -->
     <div class="container-cardAfrica" data-text="Section 4" id="sec4">
         <div class="container-toggle-content">
             <a href='#sec1'>
@@ -268,13 +286,14 @@
             </div>
         </div>
     </div>
-    <div class="container-timeline-roma" data-text="Section 5" id="sec5">
+    <!-- People evolution 1900 -->
+    <div class="bigContainerPie" data-text="Section 2" id="sec2">
         <div class="container-toggle-content">
             <a href='#sec1'>
                 <div class="button button-one "></div>
             </a>
             <a href='#sec2'>
-                <div class="button button-two"></div>
+                <div class="button button-two" id=button-active></div>
             </a>
             <a href='#sec3'>
                 <div class="button button-three"></div>
@@ -282,112 +301,56 @@
             <a href='#sec4'>
                 <div class="button button-four"></div>
             </a>
-            <div class="button button-five" id=button-active></div>
+            <a href='#sec5'><div class="button button-five"></div></a>
             <div class="button button-six"></div>
             <div class="button button-seven"></div>
             <div class="button button-height"></div>
             <div class="button button-nine"></div>
         </div>
-        <div class="middle-container-roma">
-            <h1>L'Empire Romain : De la naissance à la chutte du plus grand Empire de l'Antiquité</h1>
-            <div class="horizontal-line">
-                <div class="bluedot first">
-                    <div class="blueline">
-                        <span class="content">-753 : Naissance de Rome</span>
+        <div class="middleContainerPie">
+
+            <h1>Evolution du peuplement sur Terre sur les 100 dernières années.</h1>
+            <div class="container-pie">
+                <h3>Pays les plus peuplés en 1918</h3>
+                <div class="content-pie">
+                    <div class="content country-one">
+                        <div class="country-name">Chine</div>
+                        <div class="number-country">400 000 000</div>
+                        <div class="line-country-one"></div>
+                    </div>
+                    <div class="content country-two">
+                        <div class="country-name">Raj Britannique</div>
+                        <div class="number-country">330 567 600</div>
+                        <div class="line-country-two"></div>
+                    </div>
+                    <div class="content country-three">
+                        <div class="country-name">Empire Russe</div>
+                        <div class="number-country">119 546 234</div>
                     </div>
                 </div>
-                <div class="bluedot two">
-                    <div class="blueline">
-                        <span class="content">-613 : Domination des rois étrusques</span>
+            </div>
+
+            <div class="container-pie second">
+                <h3>Pays les plus peuplés en 2018</h3>
+                <div class="content-pie">
+                    <div class="content country-one">
+                        <div class="country-name">Chine</div>
+                        <div class="number-country">1 381 943 050</div>
+                        <div class="line-country-one"></div>
                     </div>
-                </div>
-                <div class="bluedot three" id='republic'>
-                    <div class="blueline" id='republic'>
-                        <span class="content">-509 : Début de la République Romaine</span>
+                    <div class="content country-two">
+                        <div class="country-name">Inde</div>
+                        <div class="number-country">1 347 781 150</div>
+                        <div class="line-country-two"></div>
                     </div>
-                </div>
-                <div class="bluedot four" id='republic'>
-                    <div class="blueline" id='republic'>
-                        <span class="content">-264 / -241 : Première guerre punique </span>
+                    <div class="content country-three">
+                        <div class="country-name">Etats-Unis</div>
+                        <div class="number-country">327 163 096</div>
                     </div>
-                </div>
-                <div class="bluedot five" id='republic'>
-                    <div class="blueline" id='republic'>
-                        <span class="content">-218 / -201 : 2ème guerre punique</span>
-                    </div>
-                </div>
-                <div class="bluedot six" id='republic'>
-                    <div class="blueline" id='republic'>
-                        <span class="content">-149 / -146 : 3ème Guerre punique</span>
-                    </div>
-                </div>
-                <div class="bluedot seven" id='republic'>
-                    <div class="blueline" id='republic'>
-                        <span class="content">-44 Jules César est nommé consul</span>
-                    </div>
-                </div>
-                <div class="bluedot eight" id='empire'>
-                    <div class="blueline" id='empire'>
-                        <span class="content">-27 : Naissance de l'Empire Romain</span>
-                    </div>
-                </div>
-                <div class="bluedot nine" id='empire'>
-                    <div class="blueline" id='empire'>
-                        <span class="content">117 : L'Empire Romain atteint son extension maximale</span>
-                    </div>
-                </div>
-                <div class="bluedot ten" id='empire'>
-                    <div class="blueline" id='empire'>
-                        <span class="content">330 : Constantinople est déclarée capitale de l'Empire</span>
-                    </div>
-                </div>
-                <div class="bluedot eleven" id='empire'>
-                    <div class="blueline" id='empire'>
-                        <span class="content">395 : L'Empire est partagée entre Occident et Orient</span>
-                    </div>
-                </div>
-                <div class="bluedot twelve" id='empire'>
-                    <div class="blueline" id='empire'>
-                        <span class="content">476 : Fin de l'Empire Romain d'Occident</span>
-                    </div>
-                </div>
-                <div class="greydot">
-                    <span class="date">-800</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">-600</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">-400</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">-200</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot special">
-                    <span class="date">1</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">200</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">400</span>
-                    <div class="vertical line"></div>
-                </div>
-                <div class="greydot">
-                    <span class="date">600</span>
-                    <div class="vertical line"></div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <script>
         var data_1918 = [
