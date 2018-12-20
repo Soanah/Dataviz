@@ -53,3 +53,9 @@ body {
     color: rgb(100, 100, 105);
     margin : 0 auto;
 }
+
+.about .disclaimer{
+    color: rgb(100, 100, 105);
+    width: 700px;
+    margin: 0 auto;
+}
