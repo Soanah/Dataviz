@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 .about {
-    width: 1080px;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
