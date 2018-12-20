@@ -4,6 +4,7 @@ html {
 
 body {
     background-image: linear-gradient(to right top, #393d4b, #2d3144, #20263d, #141b36, #08102f);
+    overflow-x: hidden;
 }
 
 p{
