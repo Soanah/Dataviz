@@ -11,7 +11,7 @@ p{
     font-size : 1.4rem;
 }
 .container {
-    width: 100%;
+    width: 1080px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -46,7 +46,7 @@ p{
 
 .content {
     display: flex;
-    width: 100%;
+    width: 1080px;
     height: 70%;
     margin: 8% auto 0 auto;
 }
