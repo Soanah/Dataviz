@@ -955,6 +955,69 @@ div.container2 span {
     color: #00DEC7;
 }
 
+.roma-bottom-content
+{
+    display: flex;
+    position: absolute;
+    width: 500px;
+    left: 8%;
+    bottom: 0;
+}
+
+.roma-bottom-content .content
+{
+    color: white;
+    font-family: 'Open Sans';
+}  
+
+.monarchie{left: 1%;}
+
+.monarchie::before
+{
+    position: relative;
+    content: '';
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: #008BE8;
+    box-shadow: 0px 0px 5px 1px #008BE8;
+
+}
+
+.republique{left: 1%;}
+
+.republique::before
+{
+    position: relative;
+    content: '';
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: #3C83AD;
+    box-shadow: 0px 0px 5px 1px #3C83AD;
+}
+
+.empire{left: 1%;}
+
+.empire::before
+{
+    position: relative;
+    content: '';
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: #00DEC7;
+    box-shadow: 0px 0px 5px 1px #00DEC7;
+}
+
+
+
 
 .first{left: 2%;}
 .first .blueline{top: -100px; height: 105px; left: 4px;} 
